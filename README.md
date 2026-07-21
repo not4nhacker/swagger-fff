@@ -2,12 +2,17 @@
 
 A Swagger / OpenAPI fetcher tool inspired by Tomnomnom's awesome [fff](https://github.com/tomnomnom/fff). Given a spec, it parses every path + method, synthesizes type-correct parameters and request bodies, fires all requests concurrently, and writes each raw HTTP response to its own file.
 
-## Build
+## Installation
 
+You can install this with:
+```bash
+go install github.com/not4nhacker/swagger-fff
+```
 
+Or you can built it from sources (tryharder):
 ```bash
 cd swagger-fff
-go mod tidy   # fetches kin-openapi + yaml.v3
+go mod tidy
 go build -o swagger-fff .
 ```
 
